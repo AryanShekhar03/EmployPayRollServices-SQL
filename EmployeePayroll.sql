@@ -41,3 +41,28 @@ UPDATE [EmployeePayroll] SET Gender = 'M' WHERE EmpName =  'Sam';
 UPDATE [EmployeePayroll] SET Gender = 'M' WHERE EmpName = 'Karn'; 
 UPDATE [EmployeePayroll] SET Gender = 'F' WHERE EmpName = 'Cris';
 UPDATE [EmployeePayroll] SET Gender = 'M' WHERE EmpName = 'Abhinav';
+
+select SUM(Salary) from EmployeePayroll --UC7
+where Gender = 'F' Group BY Gender
+select SUM(Salary) from EmployeePayroll 
+where Gender = 'M' Group BY Gender
+
+select AVG(Salary) from EmployeePayroll  
+where Gender = 'M' Group BY Gender
+select AVG(Salary) from EmployeePayroll  
+where Gender = 'F' Group BY Gender
+
+select MIN(Salary) from EmployeePayroll  
+where Gender = 'M' Group BY Gender
+select MIN(Salary) from EmployeePayroll  
+where Gender = 'F' Group BY Gender
+
+select MAX(Salary) from EmployeePayroll  
+where Gender = 'M' Group BY Gender
+select MAX(Salary) from EmployeePayroll  
+where Gender = 'F' Group BY Gender
+
+select COUNT(Salary) from EmployeePayroll
+where Gender = 'M' Group BY Gender
+select COUNT(Salary) from EmployeePayroll  --UC7
+where Gender = 'F' Group BY Gender
