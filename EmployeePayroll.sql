@@ -31,3 +31,13 @@ insert into
   
  select * from EmployeePayroll 
  where start BETWEEN CAST('2018-09-05 AS DATE') AND (NOW()); --UC5
+
+ ALTER TABLE EmployeePayroll  --UC6
+ ADD Gender varchar;
+
+ UPDATE [EmployeePayroll] SET Gender = 'M' WHERE EmpName = 'Rahul';
+UPDATE [EmployeePayroll] SET Gender = 'M' WHERE EmpName = 'Rohit';
+UPDATE [EmployeePayroll] SET Gender = 'M' WHERE EmpName =  'Sam';
+UPDATE [EmployeePayroll] SET Gender = 'M' WHERE EmpName = 'Karn'; 
+UPDATE [EmployeePayroll] SET Gender = 'F' WHERE EmpName = 'Cris';
+UPDATE [EmployeePayroll] SET Gender = 'M' WHERE EmpName = 'Abhinav';
