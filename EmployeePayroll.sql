@@ -25,3 +25,9 @@ insert into
  values(139, 'Abhinav',100000,'2019-12-9')
 
  select * from EmployeePayroll --UC4
+
+  Select salary from EmployeePayroll where EmpName = 'Rahul' --UC5
+
+  
+ select * from EmployeePayroll 
+ where start BETWEEN CAST('2018-09-05 AS DATE') AND (NOW()); --UC5
