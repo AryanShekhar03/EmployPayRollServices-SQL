@@ -1,3 +1,25 @@
 --create database Payroll_Services --UC1
 
-create table EmployeePayroll(EmpId int IDENTITY, EmpName varchar(max),Salary money,StartDate DateTime) --UC2
+--create table EmployeePayroll(EmpId int IDENTITY, EmpName varchar(max),Salary money,StartDate DateTime) --UC2
+
+SET IDENTITY_INSERT
+ EmployeePayroll ON
+
+ insert into
+EmployeePayroll(EmpId,EmpName,Salary,StartDate) --UC3
+values(113, 'Rohit',30000,'2019-7-17')
+insert into
+ EmployeePayroll(EmpId,EmpName,Salary,StartDate)
+ values(117, 'Sam',35000,'2018-12-11')
+insert into
+ EmployeePayroll(EmpId,EmpName,Salary,StartDate)
+ values(119, 'Rahul',19000,'2018-10-15') 
+ insert into
+ EmployeePayroll(EmpId,EmpName,Salary,StartDate)
+ values(121, 'Karn',39000,'2021-11-25')
+insert into
+ EmployeePayroll(EmpId,EmpName,Salary,StartDate)
+ values(137, 'Cris',10000,'2019-12-12')
+ insert into
+ EmployeePayroll(EmpId,EmpName,Salary,StartDate)
+ values(139, 'Abhinav',100000,'2019-12-9')
