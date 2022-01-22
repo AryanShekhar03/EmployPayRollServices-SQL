@@ -23,3 +23,5 @@ insert into
  insert into
  EmployeePayroll(EmpId,EmpName,Salary,StartDate)
  values(139, 'Abhinav',100000,'2019-12-9')
+
+ select * from EmployeePayroll --UC4
